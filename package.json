@@ -1,0 +1,38 @@
+{
+  "name": "vbm-transfer",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["frontend", "backend", "shared"],
+  "scripts": {
+    "setup": "npm install",
+    "prepare": "npm exec husky",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "npm run dev -w frontend",
+    "dev:backend": "npm run dev -w backend",
+    "build": "npm run build -w shared && npm run build -w backend && npm run build -w frontend",
+    "check": "npm run check -w shared && npm run check -w frontend && npm run check -w backend",
+    "lint": "npm run lint -w shared && npm run lint -w frontend && npm run lint -w backend",
+    "lint:fix": "npm run lint -w shared -- --fix && npm run lint -w frontend -- --fix && npm run lint -w backend -- --fix",
+    "test": "npm run test -w shared && npm run test -w frontend && npm run test -w backend",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint-staged": "lint-staged",
+    "validate": "npm run lint && npm run check && npm run test",
+    "ci": "npm run validate"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,mjs,cjs}": ["eslint --fix", "prettier --write"],
+    "*.{json,md,css}": ["prettier --write"]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.25.0",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
+    "typescript-eslint": "^8.30.1",
+    "vitest": "^3.1.2"
+  }
+}

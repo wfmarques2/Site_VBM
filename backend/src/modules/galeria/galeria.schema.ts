@@ -1,0 +1,1 @@
+import { z } from "zod"; export const galeriaSchema = z.object({ url: z.string().url() });

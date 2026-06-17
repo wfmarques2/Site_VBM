@@ -1,0 +1,1 @@
+export type ApiResponse<T> = { data: T; meta?: unknown; error: null | { code: string; message: string } };

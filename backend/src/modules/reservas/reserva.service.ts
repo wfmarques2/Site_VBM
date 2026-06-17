@@ -1,0 +1,1 @@
+export const reservaService = { create: async () => null };

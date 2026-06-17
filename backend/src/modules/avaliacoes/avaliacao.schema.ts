@@ -1,0 +1,1 @@
+import { z } from "zod"; export const avaliacaoSchema = z.object({ clienteNome: z.string().min(2), nota: z.number().min(1).max(5) });

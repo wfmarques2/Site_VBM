@@ -1,0 +1,1 @@
+import { z } from "zod"; export const frotaSchema = z.object({ nomeVeiculo: z.string().min(2) });

@@ -1,0 +1,1 @@
+export const useToastFeedback = () => ({ success: console.log, error: console.error });

@@ -1,0 +1,1 @@
+export const orcamentoRepository = { create: async <T>(payload: T) => payload };

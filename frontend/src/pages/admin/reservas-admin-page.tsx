@@ -1,0 +1,1 @@
+export function ReservasAdminPage() { return <main className="p-6">Admin Reservas (futuro)</main>; }

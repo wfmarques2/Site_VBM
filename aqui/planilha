@@ -1,0 +1,123 @@
+<section class="tarifas-vbm">
+    <div class="container">
+        <h2>Tarifas Aeroporto Florianópolis (FLN)</h2>
+        <p class="subtitulo">
+            Valores para transfer saindo do Aeroporto Internacional de Florianópolis.
+        </p>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Destino</th>
+                        <th>KM</th>
+                        <th>Virtus<br>4 PAX</th>
+                        <th>Corolla<br>4 PAX</th>
+                        <th>Spin<br>6 PAX</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Florianópolis - Centro</td><td>15</td><td>R$ 150</td><td>R$ 180</td><td>R$ 200</td></tr>
+                    <tr><td>Florianópolis - Sul</td><td>25</td><td>R$ 150</td><td>R$ 180</td><td>R$ 200</td></tr>
+                    <tr><td>Florianópolis - Norte</td><td>44</td><td>R$ 180</td><td>R$ 200</td><td>R$ 250</td></tr>
+                    <tr><td>São José</td><td>25</td><td>R$ 180</td><td>R$ 200</td><td>R$ 250</td></tr>
+                    <tr><td>Biguaçu</td><td>33</td><td>R$ 180</td><td>R$ 200</td><td>R$ 250</td></tr>
+                    <tr><td>Palhoça</td><td>34</td><td>R$ 180</td><td>R$ 200</td><td>R$ 250</td></tr>
+                    <tr><td>Celso Ramos</td><td>63</td><td>R$ 280</td><td>R$ 350</td><td>R$ 400</td></tr>
+                    <tr><td>Guarda do Embaú</td><td>67</td><td>R$ 280</td><td>R$ 310</td><td>R$ 350</td></tr>
+                    <tr><td>Itapema</td><td>82</td><td>R$ 350</td><td>R$ 400</td><td>R$ 500</td></tr>
+                    <tr><td>Bombinhas</td><td>86</td><td>R$ 350</td><td>R$ 450</td><td>R$ 500</td></tr>
+                    <tr><td>Garopaba</td><td>87</td><td>R$ 350</td><td>R$ 400</td><td>R$ 500</td></tr>
+                    <tr><td>Balneário Camboriú</td><td>95</td><td>R$ 350</td><td>R$ 400</td><td>R$ 500</td></tr>
+                    <tr><td>Imbituba</td><td>106</td><td>R$ 350</td><td>R$ 400</td><td>R$ 500</td></tr>
+                    <tr><td>Itajaí</td><td>110</td><td>R$ 350</td><td>R$ 400</td><td>R$ 500</td></tr>
+                    <tr><td>Penha</td><td>130</td><td>R$ 650</td><td>R$ 800</td><td>R$ 1.000</td></tr>
+                    <tr><td>Brusque</td><td>136</td><td>R$ 650</td><td>R$ 800</td><td>R$ 1.000</td></tr>
+                    <tr><td>Barra Velha</td><td>145</td><td>R$ 650</td><td>R$ 800</td><td>R$ 1.000</td></tr>
+                    <tr><td>Tubarão</td><td>152</td><td>R$ 650</td><td>R$ 800</td><td>R$ 1.000</td></tr>
+                    <tr><td>Blumenau</td><td>162</td><td>R$ 650</td><td>R$ 800</td><td>R$ 1.000</td></tr>
+                    <tr><td>Urubici</td><td>183</td><td>R$ 800</td><td>R$ 1.000</td><td>R$ 1.250</td></tr>
+                    <tr><td>Pomerode</td><td>190</td><td>R$ 800</td><td>R$ 1.000</td><td>R$ 1.250</td></tr>
+                    <tr><td>Joinville</td><td>192</td><td>R$ 800</td><td>R$ 1.000</td><td>R$ 1.250</td></tr>
+                    <tr><td>Criciúma</td><td>217</td><td>R$ 800</td><td>R$ 1.000</td><td>R$ 1.250</td></tr>
+                    <tr><td>Lages</td><td>241</td><td>R$ 1.000</td><td>R$ 1.200</td><td>R$ 1.200</td></tr>
+                    <tr><td>São Joaquim</td><td>242</td><td>R$ 1.000</td><td>R$ 1.200</td><td>R$ 1.200</td></tr>
+                    <tr><td>Torres</td><td>289</td><td>R$ 1.000</td><td>R$ 1.200</td><td>R$ 1.200</td></tr>
+                    <tr><td>Gramado</td><td>460</td><td>R$ 1.500</td><td>R$ 1.800</td><td>R$ 2.000</td></tr>
+                    <tr><td>Porto Alegre</td><td>473</td><td>R$ 1.500</td><td>R$ 1.800</td><td>R$ 2.000</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<style>
+.tarifas-vbm {
+    padding: 80px 20px;
+    background: #f8f9fb;
+}
+
+.tarifas-vbm .container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.tarifas-vbm h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.tarifas-vbm .subtitulo {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.tarifas-vbm table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.tarifas-vbm thead {
+    background: #000;
+    color: #fff;
+}
+
+.tarifas-vbm th,
+.tarifas-vbm td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.tarifas-vbm td:first-child,
+.tarifas-vbm th:first-child {
+    text-align: left;
+}
+
+.tarifas-vbm tbody tr:hover {
+    background: #f4f4f4;
+}
+
+@media (max-width: 768px) {
+
+    .tarifas-vbm h2 {
+        font-size: 28px;
+    }
+
+    .tarifas-vbm th,
+    .tarifas-vbm td {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+</style>

@@ -1,0 +1,1 @@
+export const frotaService = { list: async () => [] as unknown[] };

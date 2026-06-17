@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "check": "tsc --noEmit",
+    "lint": "npm exec -- eslint \"src/**/*.ts\"",
+    "test": "npm exec -- vitest run --config vitest.config.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.36.3",
+    "express": "^4.21.1",
+    "helmet": "^8.0.0",
+    "pg": "^8.13.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.7",
+    "@types/pg": "^8.11.10",
+    "@types/supertest": "^6.0.3",
+    "drizzle-kit": "^0.27.2",
+    "supertest": "^7.1.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}

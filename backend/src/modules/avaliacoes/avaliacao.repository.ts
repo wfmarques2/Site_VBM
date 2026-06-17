@@ -1,0 +1,1 @@
+export const avaliacaoRepository = { list: async () => [] as unknown[] };

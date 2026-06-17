@@ -1,0 +1,1 @@
+export const passeioRepository = { list: async () => [] as unknown[] };

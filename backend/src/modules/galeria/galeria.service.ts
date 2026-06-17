@@ -1,0 +1,1 @@
+export const galeriaService = { list: async () => [] as unknown[] };

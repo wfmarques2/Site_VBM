@@ -1,0 +1,1 @@
+import { Router } from "express"; import { createReservaPlaceholder } from "./reserva.controller.js"; export const reservaRoutes = Router(); reservaRoutes.post("/", createReservaPlaceholder);

@@ -1,0 +1,1 @@
+export function MediaUploader() { return <div>Upload de midia</div>; }

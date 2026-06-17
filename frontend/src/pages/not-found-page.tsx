@@ -1,0 +1,1 @@
+export function NotFoundPage() { return <main className="mx-auto max-w-5xl p-6">404 - Pagina nao encontrada</main>; }

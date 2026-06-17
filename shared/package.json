@@ -1,0 +1,16 @@
+{
+  "name": "shared",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc --noEmit",
+    "lint": "npm exec -- eslint \"src/**/*.ts\"",
+    "test": "npm exec -- vitest run --passWithNoTests"
+  },
+  "dependencies": { "zod": "^3.23.8" },
+  "devDependencies": { "typescript": "^5.6.3" }
+}

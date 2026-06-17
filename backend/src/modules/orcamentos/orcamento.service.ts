@@ -1,0 +1,1 @@
+export const orcamentoService = { create: async <T>(payload: T) => payload };

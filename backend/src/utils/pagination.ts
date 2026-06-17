@@ -1,0 +1,1 @@
+export const paginate = (page = 1, pageSize = 20) => ({ limit: pageSize, offset: (page - 1) * pageSize });

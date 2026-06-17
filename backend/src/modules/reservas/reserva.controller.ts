@@ -1,0 +1,1 @@
+import type { Request, Response } from "express"; export function createReservaPlaceholder(_req: Request, res: Response) { return res.status(501).json({ data: null, error: { code: "NOT_IMPLEMENTED", message: "Reservas por DB ainda nao habilitadas" } }); }

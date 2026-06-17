@@ -1,0 +1,1 @@
+export const reservaRepository = { create: async () => null };

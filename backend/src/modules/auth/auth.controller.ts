@@ -1,0 +1,1 @@
+import type { Request, Response } from "express"; export function login(_req: Request, res: Response) { return res.json({ data: { token: "placeholder" }, error: null }); }

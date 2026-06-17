@@ -1,0 +1,1 @@
+import { z } from "zod"; export const passeioSchema = z.object({ titulo: z.string().min(2) });

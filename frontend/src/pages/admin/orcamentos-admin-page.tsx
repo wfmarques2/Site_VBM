@@ -1,0 +1,1 @@
+export function OrcamentosAdminPage() { return <main className="p-6">Admin Orcamentos</main>; }

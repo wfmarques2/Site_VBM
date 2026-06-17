@@ -1,0 +1,1 @@
+import { z } from "zod"; export const reservaSchema = z.object({ nome: z.string().min(2), origem: z.string().min(2), destino: z.string().min(2) });

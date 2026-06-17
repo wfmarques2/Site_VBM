@@ -1,0 +1,1 @@
+export const galeriaRepository = { list: async () => [] as unknown[] };

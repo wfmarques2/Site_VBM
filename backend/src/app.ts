@@ -1,0 +1,28 @@
+import cors from "cors";
+import express from "express";
+import helmet from "helmet";
+import { env } from "./config/env.js";
+import { passeioRoutes } from "./modules/passeios/passeio.routes.js";
+import { frotaRoutes } from "./modules/frota/frota.routes.js";
+import { galeriaRoutes } from "./modules/galeria/galeria.routes.js";
+import { avaliacaoRoutes } from "./modules/avaliacoes/avaliacao.routes.js";
+import { orcamentoRoutes } from "./modules/orcamentos/orcamento.routes.js";
+import { authRoutes } from "./modules/auth/auth.routes.js";
+import { reservaRoutes } from "./modules/reservas/reserva.routes.js";
+import { trackingRoutes } from "./modules/tracking/tracking.routes.js";
+import { errorMiddleware } from "./middlewares/error.middleware.js";
+
+export const app = express();
+app.use(helmet());
+app.use(cors({ origin: env.CORS_ORIGIN }));
+app.use(express.json());
+app.get("/health", (_req, res) => res.json({ status: "ok" }));
+app.use("/api/v1/passeios", passeioRoutes);
+app.use("/api/v1/frota", frotaRoutes);
+app.use("/api/v1/galeria", galeriaRoutes);
+app.use("/api/v1/avaliacoes", avaliacaoRoutes);
+app.use("/api/v1/orcamentos", orcamentoRoutes);
+app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/reservas", reservaRoutes);
+app.use("/api/v1/tracking", trackingRoutes);
+app.use(errorMiddleware);
