@@ -323,7 +323,8 @@ export const translations = {
       whatsapp: 'WhatsApp',
       email: 'Email',
       instagram: 'Instagram',
-      copyright: '© 2024 VBM Transfer. Todos os direitos reservados.'
+      copyright: '© 2024 VBM Transfer. Todos os direitos reservados.',
+      whatsappInitialMessage: 'Olá, encontrei sua empresa no Google e gostaria de um orçamento'
     }
   },
   'es': {
@@ -643,14 +644,15 @@ export const translations = {
       ]
     },
     footer: {
-      description: 'Confort, excelencia y puntualidad en cada traslado executiva.',
+      description: 'Confort, excelência e pontualidade em cada traslado executiva.',
       menu: 'Menú',
       services: 'Servicios',
       contact: 'Contacto',
       whatsapp: 'WhatsApp',
       email: 'Correo',
       instagram: 'Instagram',
-      copyright: '© 2024 VBM Transfer. Todos los derechos reservados.'
+      copyright: '© 2024 VBM Transfer. Todos os direitos reservados.',
+      whatsappInitialMessage: 'Hola, encontré su empresa en Google y me gustaría un presupuesto'
     }
   }
 };

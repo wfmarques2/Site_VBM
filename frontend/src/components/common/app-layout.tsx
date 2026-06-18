@@ -448,7 +448,7 @@ export function AppLayout({ children }: { children: ReactNode }) {
       <PremiumFooter />
 
       <a
-        href={`https://wa.me/${env.whatsappNumber}`}
+        href={`https://wa.me/${env.whatsappNumber}?text=${encodeURIComponent(t.footer.whatsappInitialMessage)}`}
         target="_blank"
         rel="noreferrer"
         aria-label="Conversar no WhatsApp"
